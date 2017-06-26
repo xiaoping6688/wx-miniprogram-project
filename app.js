@@ -3,6 +3,8 @@ import service from './utils/service'
 
 App({
   onLaunch: function () {
+    // FIXME 演示版注释掉登录功能
+    
     // 预登录
     // let that = this
     // this.doLogin(function (data) {
