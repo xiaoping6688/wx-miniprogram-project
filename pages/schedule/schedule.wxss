@@ -1,0 +1,204 @@
+/* pages/schedule/schedule.wxss */
+.nav-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 57px;
+  border-bottom: 1rpx solid #cacbcc;
+  background-color: #fff;
+}
+
+.week-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 330rpx;
+}
+
+.cur-week {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.cur-week .week {
+  font-size: 32rpx;
+  color: #18191A;
+}
+
+.cur-week .title {
+  font-size: 28rpx;
+  color: #7A7D80;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.add-course-btn {
+  width: 52rpx;
+  height: 52rpx;
+  margin-left: 20rpx;
+}
+
+.feedback-btn {
+  width: 50rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.pre-week-btn {
+  width: 16rpx;
+  height: 30rpx;
+}
+
+.next-week-btn {
+  width: 16rpx;
+  height: 30rpx;
+}
+
+.tab-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.cur-month {
+  width: 106rpx;
+  height: 52rpx;
+  background-color: #fe5700;
+  text-align: center;
+  line-height: 52rpx;
+  color: #fff;
+  font-size: 28rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+
+.week-list {
+ display: flex;
+ flex-direction: row;
+ max-width: 100%;
+ height: 100%;
+}
+
+.day-text {
+  width: 90rpx;
+  height: 100%;
+  font-size: 28rpx;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-text.active {
+  background-color: #fe5700;
+}
+
+.day-text.active text {
+  color: #fff !important;
+}
+
+.day-text text:first-child {
+  color: #18191A;
+}
+
+.day-text text:last-child {
+  color: #7A7D80
+}
+
+.tab-scroll {
+  height: calc(100% - 57px - 50px);
+  z-index: 10;
+  position: fixed;
+  border-top: 1rpx solid #cacbcc;
+  background-color: #fff;
+}
+
+.tab-container {
+  height:600px;
+  width:750rpx;
+  display:flex;
+}
+
+.tab-divide {
+  background-color:#f6f6f6;
+  color:#7A7D80;
+}
+
+.tab-divide-item {
+  width: 53rpx;
+  height: 200px;
+  font-size: 24rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #cacbcc;
+  border-right: 1rpx solid #cacbcc;
+  box-sizing: border-box;
+}
+
+.tab-divide-item text {
+  width: 24rpx;
+  line-height: 1.5;
+}
+
+.tab-section {
+  background-color:#f6f6f6;
+  color:#18191A;
+}
+
+.tab-section-divide {
+  width: 53rpx;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid #cacbcc;
+  box-sizing: border-box;
+}
+
+.tab-section-item {
+  width: 53rpx;
+  height: 50px;
+  font-size: 24rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.tab-line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color:#cacbcc;
+  margin-top: -1px;
+}
+
+.course-item {
+  position: absolute;
+  width: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-item-inner {
+  width: 88rpx;
+  border-radius: 3px;
+  font-size: 24rpx;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.course-item-inner text:not(:last-child) {
+  margin-bottom: 6rpx;
+}

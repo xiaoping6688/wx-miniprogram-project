@@ -1,0 +1,2 @@
+<!--pages/queryQuiz/queryQuiz.wxml-->
+<include src="../../templates/home-button.wxml"/>

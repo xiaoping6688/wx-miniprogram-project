@@ -1,0 +1,5 @@
+<!--pages/splash/splash.wxml-->
+<view class="container splash">
+  <!--<image src="{{ launchImg }}" mode="aspectFill" style="width: {{imgWidth}}px; height: {{imgHeight}}px"/>-->
+  <image src="{{ launchImg }}" mode="aspectFill" />
+</view>

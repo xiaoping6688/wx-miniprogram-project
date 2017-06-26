@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/schedule/schedule",
+    "pages/addCourse/addCourse",
+    "pages/editCourse/editCourse",
+    "pages/queryCourse/queryCourse",
+    "pages/queryResult/queryResult",
+    "pages/queryQuiz/queryQuiz",
+    "pages/feedback/feedback"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "课表",
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#7a7d80",
+    "selectedColor": "#fe5700",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "查看课程",
+        "pagePath": "pages/queryCourse/queryCourse",
+        "iconPath": "images/icon_1course_n@2x.png",
+        "selectedIconPath": "images/icon_1course_p@2x.png"
+      },
+      {
+        "text": "查看反馈",
+        "pagePath": "pages/queryResult/queryResult",
+        "iconPath": "images/icon_2feedback_n@2x.png",
+        "selectedIconPath": "images/icon_2feedback_p@2x.png"
+      },
+      {
+        "text": "考考孩子",
+        "pagePath": "pages/queryQuiz/queryQuiz",
+        "iconPath": "images/icon_3child_n@2x.png",
+        "selectedIconPath": "images/icon_3child_p@2x.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "debug": true
+}

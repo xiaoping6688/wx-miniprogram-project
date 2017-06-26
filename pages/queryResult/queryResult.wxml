@@ -1,0 +1,2 @@
+<!--pages/queryResult/queryResult.wxml-->
+<include src="../../templates/home-button.wxml"/>

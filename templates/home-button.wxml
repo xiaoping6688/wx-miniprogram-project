@@ -1,0 +1,3 @@
+<view class="nav-home-btn" bindtap="navHomeHandler">
+  <image src="../../images/btn_home@2x.png"></image>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/queryCourse/queryCourse.wxml-->
+<include src="../../templates/home-button.wxml"/>
