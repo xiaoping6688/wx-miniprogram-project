@@ -231,7 +231,7 @@ export let http = {
         delete http.requestsCache[api]
         http.trace('[Response] ' + res.statusCode + ' ' + api + "\n" + JSON.stringify(res.data))
 
-        if (res.statusCode == 200 && typeof onSuccess === 'function') {
+        if (res.statusCode < 400 && typeof onSuccess === 'function') {
           try {
             onSuccess(res.data)
           } catch (err) {
