@@ -14,10 +14,6 @@ let formatWeekDate = function (date) {
   return date.getDate() + '日'
 }
 
-let formatWeekOrder = function (day) {
-  return (day == 0 ? 6 : day - 1)
-}
-
 Page({
   /**
    * 页面的初始数据
@@ -105,7 +101,7 @@ Page({
     // 判断是否当前天
     let todayIndex = -1
     if (date.getFullYear() == today.getFullYear() && date.getMonth() == today.getMonth() && dateUtil.getMonthWeekth(date) == dateUtil.getMonthWeekth(today)) {
-      todayIndex = formatWeekOrder(today.getDay())
+      todayIndex = dateUtil.formatWeekOrder(today.getDay())
     }
 
     // 获取当前周日期
@@ -143,7 +139,7 @@ Page({
     //       tasklist.push({
     //         id: idx++,
     //         type: item.classType,
-    //         day: formatWeekOrder(new Date(item.classDate).getDay()),
+    //         day: dateUtil.formatWeekOrder(new Date(item.classDate).getDay()),
     //         start: item.sectionStart,
     //         sections: item.sectionEnd - item.sectionStart + 1,
     //         course: item.subjectName,

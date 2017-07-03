@@ -42,5 +42,12 @@ export var getDiffDate = function (date, num, changeSelf = true) {
  */
 export var getWeekFirstDate = function (date) {
   date = new Date(date)
-  return getDiffDate(date, 1 - date.getDay())
+  return getDiffDate(date, -this.formatWeekOrder(date.getDay()))
+}
+
+/**
+ * 格式化周日期顺序（0-6）
+ */
+export var formatWeekOrder = function (day) {
+  return (day == 0 ? 6 : day - 1)
 }
