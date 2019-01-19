@@ -9,7 +9,8 @@
 - 简单实现日历功能
 - 引入[WeUI](https://github.com/weui/weui-wxss/)等
 
-**注：**推荐使用mpvue或跨平台小程序开发框架Taro和Uni-app
+**注：** 推荐使用mpvue或跨平台小程序开发框架Taro和Uni-app
+
 ---
 
 ![image](https://raw.githubusercontent.com/xiaoping6688/wx-schedule/master/images/screenshot.png)
